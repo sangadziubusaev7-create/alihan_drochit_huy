@@ -1,0 +1,128 @@
+/* Цветовая палитра */
+:root {
+  --primary: #4a7c59; /* Спокойный зеленый */
+  --bg-color: #f4f7f6; /* Светлый фон */
+  --text-color: #333333;
+  --card-bg: #ffffff;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Шапка */
+header {
+  background: linear-gradient(135deg, #4a7c59, #2c4c35);
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+header h1 {
+  margin: 0 0 10px 0;
+  font-size: 28px;
+}
+
+header p {
+  margin: 0;
+  opacity: 0.9;
+  font-size: 16px;
+}
+
+/* Основной контент */
+main {
+  max-width: 600px;
+  margin: -20px auto 20px;
+  padding: 0 20px;
+  position: relative;
+}
+
+/* Карточки */
+.card {
+  background: var(--card-bg);
+  padding: 25px;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.card h2 {
+  margin-top: 0;
+  color: var(--primary);
+  font-size: 22px;
+}
+
+/* Кнопки */
+.contact-btn {
+  display: block;
+  text-align: center;
+  padding: 15px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+  transition: transform 0.1s;
+}
+
+.contact-btn:active {
+  transform: scale(0.98); /* Эффект нажатия */
+}
+
+.phone-btn {
+  background-color: var(--primary);
+  color: white;
+}
+
+.messengers {
+  display: flex;
+  gap: 10px;
+}
+
+.wa-btn, .tg-btn {
+  flex: 1;
+  color: white;
+  font-size: 16px;
+}
+
+.wa-btn { background-color: #25D366; } /* Цвет WhatsApp */
+.tg-btn { background-color: #0088cc; } /* Цвет Telegram */
+
+/* Список грамот */
+.docs-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.docs-list li {
+  margin-bottom: 12px;
+}
+
+.docs-list a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 500;
+  display: block;
+  padding: 10px;
+  background: #f0f4f1;
+  border-radius: 8px;
+  border-left: 4px solid var(--primary);
+}
+
+.docs-list a:active {
+  background: #e0eae3;
+}
+
+/* Подвал */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #888;
+  font-size: 14px;
+}
